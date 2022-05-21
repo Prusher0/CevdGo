@@ -1,5 +1,5 @@
 function scr_oyuncu_kontrol() {
-	if (mouse_check_button(mb_left))
+	if (mouse_check_button(mb_left) and global.uiOpen=0)
 
 	{
 		if (instance_position(mouse_x, mouse_y, obj_house))

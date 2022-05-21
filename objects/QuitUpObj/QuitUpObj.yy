@@ -1,12 +1,12 @@
 {
   "spriteId": {
-    "name": "fabrika",
-    "path": "sprites/fabrika/fabrika.yy",
+    "name": "Quit",
+    "path": "sprites/Quit/Quit.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": true,
   "spriteMaskId": null,
-  "persistent": false,
+  "persistent": true,
   "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
@@ -30,7 +30,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_fabrika",
+  "name": "QuitUpObj",
   "tags": [],
   "resourceType": "GMObject",
 }

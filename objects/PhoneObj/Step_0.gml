@@ -34,31 +34,51 @@ switch(i){
 		case 0:
 			if global.fireSondur ==1{
 				grid[# 1,i]+=1;
-				if (!instance_exists(oTextbox)) {
-						// Create
-						var _tb = instance_create_layer(0, 0, "Instances", oTextbox);
-						// Add messages to textbox's list
-						var _list = _tb.messages;
-	
-						for (var i=0; i<array_length_1d(msgFireDie); i++) {
-							var _arr = msgFireDie[i];
-	
-							ds_list_add(_list, _arr);
-						}
-					}
-						alarm[0] = 2*room_speed;
+				global.uiOpen=1;
+				deathmessage=1;
+					global.fireSondur =0
+						alarm[0] = 5*room_speed;
 						
 					}
 			break;
 		case 1:
-			if global.energyProduced==1{
+			if global.adamTopla==1{
 				grid[# 1,i]+=1;
+				manPowerMessage =1;
+				alarm[1] = 5*room_speed;
+				
+			}
+		break;
+		case 2:
+			if global.fireSondur ==1{
+				grid[# 1,i]+=1
+				layer_destroy(layer_get_id("obj_cimen_usutndeki_her_sey") )
+				winMessage=1;
+				alarm[2] = 5*room_speed;
+				
 			}
 		break;
 	}
 	break;
-	case quests.agac_dik:
-	
+	case quests.filtre_tak:
+	switch(grid[# 1,i]){
+		case -1:
+		break;
+		case 0:
+			if global.Filtre == 1{
+			grid[# 1,i]+=1;
+			filterMessage=1;
+			alarm[3] = 5*room_speed;
+			}
+		case 1:
+			if global.bacaTakildi==1{
+				
+				grid[# 1,i]+=1;
+				endMessage=1;
+				alarm[4] = 5*room_speed;
+			}
+		break;
+	}
 	break;
 }
 i++;
@@ -70,8 +90,139 @@ global.inst.x=x+15
 global.inst.y=y+25
 global.questButton.x=x+60
 global.questButton.y=y+25
-
-if global.houseDialog ==1{
+if deathmessage ==1{
+	if dialogOn ==0{
+		d=0;
+		dd=0;
+		dialogOn =1;
+	}
+	if (!instance_exists(oTextbox)) {
+		// Create
+		var _tb = instance_create_layer(0, 0, "Instances", oTextbox);
+	
+		// Add messages to textbox's list
+		var _list = _tb.messages;
+	
+		for (var i=0; i<array_length_1d(msgFireDie); i++) {
+			var _arr = msgFireDie[i];
+		
+			ds_list_add(_list, _arr);
+		}
+	}
+	
+	if d<5{
+		dd++
+		if dd%5==0{
+			d++;
+		}
+	}
+}else if filterMessage ==1{
+	if dialogOn ==0{
+		d=0;
+		dd=0;
+		dialogOn =1;
+	}
+	if (!instance_exists(oTextbox)) {
+		// Create
+		var _tb = instance_create_layer(0, 0, "Instances", oTextbox);
+	
+		// Add messages to textbox's list
+		var _list = _tb.messages;
+	
+		for (var i=0; i<array_length_1d(msgFiltre); i++) {
+			var _arr = msgFiltre[i];
+		
+			ds_list_add(_list, _arr);
+		}
+	}
+	
+	if d<5{
+		dd++
+		if dd%5==0{
+			d++;
+		}
+	}
+}else if endMessage ==1{
+	if dialogOn ==0{
+		d=0;
+		dd=0;
+		dialogOn =1;
+	}
+	if (!instance_exists(oTextbox)) {
+		// Create
+		var _tb = instance_create_layer(0, 0, "Instances", oTextbox);
+	
+		// Add messages to textbox's list
+		var _list = _tb.messages;
+	
+		for (var i=0; i<array_length_1d(msgEndGame); i++) {
+			var _arr = msgEndGame[i];
+		
+			ds_list_add(_list, _arr);
+		}
+	}
+	
+	if d<5{
+		dd++
+		if dd%5==0{
+			d++;
+		}
+	}
+}else if manPowerMessage ==1{
+	if dialogOn ==0{
+		d=0;
+		dd=0;
+		dialogOn =1;
+	}
+	if (!instance_exists(oTextbox)) {
+		// Create
+		var _tb = instance_create_layer(0, 0, "Instances", oTextbox);
+	
+		// Add messages to textbox's list
+		var _list = _tb.messages;
+	
+		for (var i=0; i<array_length_1d(msgAdamTopla); i++) {
+			var _arr = msgAdamTopla[i];
+		
+			ds_list_add(_list, _arr);
+		}
+	}
+	
+	
+	if d<5{
+		dd++
+		if dd%5==0{
+			d++;
+		}
+	}
+}else if winMessage ==1{
+	if dialogOn ==0{
+		d=0;
+		dd=0;
+		dialogOn =1;
+	}
+	if (!instance_exists(oTextbox)) {
+		// Create
+		var _tb = instance_create_layer(0, 0, "Instances", oTextbox);
+	
+		// Add messages to textbox's list
+		var _list = _tb.messages;
+	
+		for (var i=0; i<array_length_1d(msgWin); i++) {
+			var _arr = msgWin[i];
+		
+			ds_list_add(_list, _arr);
+		}
+	}
+	
+	
+	if d<5{
+		dd++
+		if dd%5==0{
+			d++;
+		}
+	}
+}else if global.houseDialog ==1{
 	if dialogOn ==0{
 		d=0;
 		dd=0;

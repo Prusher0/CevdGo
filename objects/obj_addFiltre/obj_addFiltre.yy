@@ -1,9 +1,9 @@
 {
   "spriteId": {
-    "name": "fabrika",
-    "path": "sprites/fabrika/fabrika.yy",
+    "name": "spr_add",
+    "path": "sprites/spr_add/spr_add.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
@@ -30,7 +30,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_fabrika",
+  "name": "obj_addFiltre",
   "tags": [],
   "resourceType": "GMObject",
 }

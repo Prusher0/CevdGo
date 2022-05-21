@@ -1,9 +1,9 @@
 {
   "spriteId": {
-    "name": "fabrika",
-    "path": "sprites/fabrika/fabrika.yy",
+    "name": "SprUpUi",
+    "path": "sprites/SprUpUi/SprUpUi.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
@@ -20,9 +20,7 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":13,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -30,7 +28,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_fabrika",
+  "name": "ControlUi",
   "tags": [],
   "resourceType": "GMObject",
 }

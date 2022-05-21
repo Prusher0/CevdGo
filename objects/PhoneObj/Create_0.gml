@@ -4,6 +4,16 @@ global.inst = instance_create_layer(x+15, y+25, "Mobile", StatsButton);
 global.questButton = instance_create_layer(x+60, y+25, "Mobile", MissionsButton);
 dd=0;
 d=0;
+trigered=0;
+deathmessage=0;
+manPowerMessage=0;
+winMessage=0;
+filterMessage=0;
+endMessage=0;
+global.bacaTakildi=0;
+global.Filtre=0;
+global.ManPower=0;
+global.uiOpen=0;
 global.turdToplandi = 0;
 global.houseDialog = 0;
 global.mushroomDialog = 0;
@@ -18,10 +28,21 @@ global.redportalDialog = 0;
 global.solarDialog = 0;
 global.yellowportalDialog = 0;
 global.tavukinekDialog = 0;
+
 dialogOn = 0;
+
+msgFiltre = [
+	["Topladığın insanları kullanarak fabrikanın bacasına filtreyi takmalısın", "Creatiny", sImage1],
+]
+msgEndGame= [
+	["Dünyayı Kurtardın!!", "Creatiny", sImage1],
+]
 
 msgHouse = [
 	["Evim evim guzel evim !", "Cevdet", sImage0],
+]
+msgWin = [
+	["Harikasın! Hep beraber yangını söndürdünüz!!", "Creatiny", sImage1],
 ]
 
 msgMushroom = [
@@ -74,22 +95,27 @@ msgInekTavuk = [
 
 
 msgFireDie = [
-	["Tek Basina Sonduremezsin, Insan Toplamalisin", "Creatiny", sImage1],
+	["Tek Basina Sonduremezsin, 5 Insan Toplamalisin", "Creatiny", sImage1],
+]
+
+msgAdamTopla = [
+	["Simdi hep birlikte bu atesi sondurebilirsiniz", "Creatiny", sImage1],
 ]
 global.energyPnt = 0;
 global.energyProduced=0;
 global.fireSondur =0;
+global.adamTopla=0;
 enum quests{
 	elektrik_uret,
 	yangin_sondur,	
-	agac_dik
+	filtre_tak,
 }
 k=0;
 z=0;
 global.QuestArray= [
-	["Boktan Elektrik Üret",0,["İnek Dışkılarını Toplamalısın","Dışkıları Metan Gazı Makinesine Koy","Başardın"],],
-	["Yangini Sondur",0,["Yangini Sondurmeyi Dene","Tek Basina Yapamazsin, Insan Toplamalisin", "Basardin"],],
-	["Agac Dik",0,["Çok Fazla Fidana Ihtiyacın Var","Fidanları Dikmelisin","Başardın"],],
+	["Biogasdan Elektrik Uret",0,["Inek Diskilarini Toplamalisin","Diskilari Metan Gazi Makinesine Koy","Basardin"],],
+	["Yangini Sondur",0,["Yangini Sondurmeyi Dene","Tek Basina Yapamazsin, Insan Toplamalisin","Simdi Git Ve Atesi Sondur", "Basardin"],],
+	["Fabrikanin Bacasina Filtre Tak",0,["Filtre Almalisin","Bacaya Filtre Takmalisin","Basardin"],],
 ];
 global.ds_quests = QuestDBScript(global.QuestArray);
 global.ds_quests_number =ds_grid_height(global.ds_quests);
