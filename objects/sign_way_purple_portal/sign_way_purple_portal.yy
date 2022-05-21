@@ -28,7 +28,7 @@
     "path": "folders/Objects/signs.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sign_way_prurple_portal",
+  "name": "sign_way_purple_portal",
   "tags": [],
   "resourceType": "GMObject",
 }

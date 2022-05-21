@@ -5,6 +5,45 @@ function scr_oyuncu_kontrol() {
 		if (instance_position(mouse_x, mouse_y, obj_house))
 		{
 			global.houseDialog = 1;
+		}
+		if (instance_position(mouse_x, mouse_y, sign_skull_mushroom))
+		{
+			global.mushroomDialog = 1;
+		}
+		if (instance_position(mouse_x, mouse_y, sign_way_biogas))
+		{
+			global.biogasDialog = 1;
+		}
+		if (instance_position(mouse_x, mouse_y, sign_way_control_panel))
+		{
+			global.controlpanelDialog = 1;
+		}
+		if (instance_position(mouse_x, mouse_y, sign_way_forest_entry))
+		{
+			global.forestDialog = 1;
+		}
+		if (instance_position(mouse_x, mouse_y, sign_way_green_portal))
+		{
+			global.greenportalDialog = 1;
+		}
+		if (instance_position(mouse_x, mouse_y, sign_way_observatory))
+		{
+			global.obeservatoryDialog = 1;
+		}if (instance_position(mouse_x, mouse_y, sign_way_purple_portal))
+		{
+			global.purpleportalDialog = 1;
+		}if (instance_position(mouse_x, mouse_y, sign_way_recycler))
+		{
+			global.recyclerDialog = 1;
+		}if (instance_position(mouse_x, mouse_y, sign_way_red_portal))
+		{
+			global.redportalDialog = 1;
+		}if (instance_position(mouse_x, mouse_y, sign_way_solar))
+		{
+			global.solarDialog = 1;
+		}if (instance_position(mouse_x, mouse_y, sign_way_yellow_portal))
+		{
+			global.yellowportalDialog = 1;
 		}else if(instance_position(mouse_x,mouse_y,obj_crate)){
 			var ui = obj_ui;
 			var alindi = false;
@@ -53,6 +92,17 @@ function scr_oyuncu_kontrol() {
 		else 
 		{
 			global.houseDialog = 0;
+			global.mushroomDialog = 0;
+			global.biogasDialog = 0;
+			global.controlpanelDialog = 0;
+			global.forestDialog = 0;
+			global.greenportalDialog = 0;
+			global.obeservatoryDialog = 0;
+			global.purpleportalDialog = 0;
+			global.recyclerDialog = 0;
+			global.redportalDialog = 0;
+			global.solarDialog = 0;
+			global.yellowportalDialog = 0;
 			if(sprite_index != anim_kosma)
 			{
 				sprite_index = anim_kosma;

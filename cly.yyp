@@ -187,7 +187,7 @@
     {"id":{"name":"obj_tree2","path":"objects/obj_tree2/obj_tree2.yy",},"order":32,},
     {"id":{"name":"SpritePhone","path":"sprites/SpritePhone/SpritePhone.yy",},"order":5,},
     {"id":{"name":"spr_lbolt","path":"sprites/spr_lbolt/spr_lbolt.yy",},"order":91,},
-    {"id":{"name":"sign_way_prurple_portal","path":"objects/sign_way_prurple_portal/sign_way_prurple_portal.yy",},"order":8,},
+    {"id":{"name":"sign_way_purple_portal","path":"objects/sign_way_purple_portal/sign_way_purple_portal.yy",},"order":8,},
     {"id":{"name":"spr_home","path":"sprites/spr_home/spr_home.yy",},"order":63,},
     {"id":{"name":"rm_fire_forest","path":"rooms/rm_fire_forest/rm_fire_forest.yy",},"order":8,},
     {"id":{"name":"spr_mantar19697","path":"sprites/spr_mantar19697/spr_mantar19697.yy",},"order":91,},
