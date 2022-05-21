@@ -5,6 +5,19 @@ function scr_oyuncu_kontrol() {
 		if (instance_position(mouse_x, mouse_y, obj_house))
 		{
 			global.houseDialog = 1;
+		}else if(instance_position(mouse_x,mouse_y,obj_crate)){
+			var ui = obj_ui;
+			var alindi = false;
+
+			for (i=1; i<10; i++)
+			{
+				if (ui.envanter[i] == obj_turd.object_index)
+				{
+					global.energyPnt+= ui.envanter_numara[i]
+					ui.envanter_numara[i] =0
+					
+				}
+			}
 		}else if (instance_position(mouse_x, mouse_y, obj_parent_kaynaklar))
 		{
 			
