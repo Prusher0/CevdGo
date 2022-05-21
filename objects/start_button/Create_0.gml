@@ -2,9 +2,9 @@
 // My messages
 // Array order should match MSG enum order
 msg = [
-	["Selamlar! Oyunumuza Hoşgeldiniz!", "CREATINY", sImage1],
-	["Hello! It's-a-me, player!", "Cevdet", sImage0],
-	["Player, that's a weird name.", "CREATINY", sImage1],
-	["Well, anyway. Do you wanna earn some money? I've got quite the job for you!", "CREATINY", sImage1],
-	["no", "Cevdet", sImage0]
+	["Selamlar! Oyunumuza Hosgeldiniz!", "CREATINY", sImage1],
+	["Selam! Ben, Cevdet!", "Cevdet", sImage0],
+	["Cevdet, ne kadar da guzel bir isim.", "CREATINY", sImage1],
+	["Neyse, umarim karsilasacaklarina hazirsindir ?", "CREATINY", sImage1],
+	["Hayir?", "Cevdet", sImage0]
 ]

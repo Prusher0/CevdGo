@@ -12,3 +12,4 @@ if (!instance_exists(oTextbox)) {
 		ds_list_add(_list, _arr);
 	}
 }
+
