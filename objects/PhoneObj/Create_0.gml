@@ -10,6 +10,8 @@ manPowerMessage=0;
 winMessage=0;
 filterMessage=0;
 endMessage=0;
+turdmesaj=0;
+biomesaj=0;
 global.bacaTakildi=0;
 global.Filtre=0;
 global.ManPower=0;
@@ -33,6 +35,14 @@ dialogOn = 0;
 
 msgFiltre = [
 	["Topladığın insanları kullanarak fabrikanın bacasına filtreyi takmalısın", "Creatiny", sImage1],
+]
+
+msgTurdTopla = [
+	["Topladigin diskilari kullanarak biogas uretebilirsin", "Creatiny", sImage1],
+]
+
+msgBioGas = [
+	["Harikasin. Elde ettigin enerjileri kullanarak gelistirme yapabilirsin", "Creatiny", sImage1],
 ]
 msgEndGame= [
 	["Dünyayı Kurtardın!!", "Creatiny", sImage1],

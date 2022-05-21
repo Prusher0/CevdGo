@@ -12,7 +12,10 @@ switch(i){
 		break;
 		case 0:
 			if global.turdToplandi == 1{
-			grid[# 1,i]+=1;}
+			grid[# 1,i]+=1;
+			turdmesaj=1;
+			alarm[5] = 5*room_speed;
+			}
 			//with(obj_oyuncu){
 			//	var inst=instance_place(x,y,obj_ates);
 			//	if(inst!=noone){with(inst){
@@ -23,6 +26,8 @@ switch(i){
 		case 1:
 			if global.energyProduced==1{
 				grid[# 1,i]+=1;
+				biomesaj=1;
+				alarm[6] = 5*room_speed;
 			}
 		break;
 	}
@@ -105,6 +110,58 @@ if deathmessage ==1{
 	
 		for (var i=0; i<array_length_1d(msgFireDie); i++) {
 			var _arr = msgFireDie[i];
+		
+			ds_list_add(_list, _arr);
+		}
+	}
+	
+	if d<5{
+		dd++
+		if dd%5==0{
+			d++;
+		}
+	}
+}else if turdmesaj ==1{
+	if dialogOn ==0{
+		d=0;
+		dd=0;
+		dialogOn =1;
+	}
+	if (!instance_exists(oTextbox)) {
+		// Create
+		var _tb = instance_create_layer(0, 0, "Instances", oTextbox);
+	
+		// Add messages to textbox's list
+		var _list = _tb.messages;
+	
+		for (var i=0; i<array_length_1d(msgTurdTopla); i++) {
+			var _arr = msgTurdTopla[i];
+		
+			ds_list_add(_list, _arr);
+		}
+	}
+	
+	if d<5{
+		dd++
+		if dd%5==0{
+			d++;
+		}
+	}
+}else if biomesaj ==1{
+	if dialogOn ==0{
+		d=0;
+		dd=0;
+		dialogOn =1;
+	}
+	if (!instance_exists(oTextbox)) {
+		// Create
+		var _tb = instance_create_layer(0, 0, "Instances", oTextbox);
+	
+		// Add messages to textbox's list
+		var _list = _tb.messages;
+	
+		for (var i=0; i<array_length_1d(msgBioGas); i++) {
+			var _arr = msgBioGas[i];
 		
 			ds_list_add(_list, _arr);
 		}
