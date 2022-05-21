@@ -111,10 +111,14 @@ msgFireDie = [
 msgAdamTopla = [
 	["Simdi hep birlikte bu atesi sondurebilirsiniz", "Creatiny", sImage1],
 ]
+msgFiltretak = [
+	["Once filtre almalisin", "Creatiny", sImage1],
+]
 global.energyPnt = 0;
 global.energyProduced=0;
 global.fireSondur =0;
 global.adamTopla=0;
+global.filtretak =0;
 enum quests{
 	elektrik_uret,
 	yangin_sondur,	

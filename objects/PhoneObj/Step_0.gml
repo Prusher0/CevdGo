@@ -121,6 +121,32 @@ if deathmessage ==1{
 			d++;
 		}
 	}
+}else if global.filtretak ==1{
+	if dialogOn ==0{
+		d=0;
+		dd=0;
+		dialogOn =1;
+	}
+	if (!instance_exists(oTextbox)) {
+		// Create
+		var _tb = instance_create_layer(0, 0, "Instances", oTextbox);
+	
+		// Add messages to textbox's list
+		var _list = _tb.messages;
+	
+		for (var i=0; i<array_length_1d(msgFiltretak); i++) {
+			var _arr = msgFiltretak[i];
+		
+			ds_list_add(_list, _arr);
+		}
+	}
+	
+	if d<5{
+		dd++
+		if dd%5==0{
+			d++;
+		}
+	}
 }else if turdmesaj ==1{
 	if dialogOn ==0{
 		d=0;
