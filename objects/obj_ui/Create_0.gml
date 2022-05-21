@@ -3,9 +3,9 @@
 depth = -5;
 display_set_gui_size(640,360);
 
-slot_1 = obj_balta;
-slot_2 = obj_hancer;
-slot_3 = obj_pala;
+slot_1 = noone;
+slot_2 = noone;
+slot_3 = noone;
 slot_4 = noone;
 slot_5 = noone;
 
@@ -20,9 +20,9 @@ slot_5_secilmis = false;
 envanter_goster = false;
 envanter_secim = noone;
 
-envanter [1] = obj_balta;
-envanter [2] = obj_hancer;
-envanter [3] = obj_pala;
+envanter [1] = noone;
+envanter [2] = noone;
+envanter [3] = noone;
 envanter [4] = noone;
 envanter [5] = noone;
 envanter [6] = noone;
