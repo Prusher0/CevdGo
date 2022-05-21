@@ -20,11 +20,39 @@ switch(i){
 			//		}
 			//	}
 			//}
+		case 1:
+			if global.energyProduced==1{
+				grid[# 1,i]+=1;
+			}
 		break;
 	}
 	break;
 	case quests.yangin_sondur:
+		case -1:
+		break;
+		case 0:
+			if global.fireSondur ==1{
+				grid[# 1,i]+=1;
+				if (!instance_exists(oTextbox)) {
+						// Create
+						var _tb = instance_create_layer(0, 0, "Instances", oTextbox);
+						// Add messages to textbox's list
+						var _list = _tb.messages;
 	
+						for (var i=0; i<array_length_1d(msgFireDie); i++) {
+							var _arr = msgFireDie[i];
+	
+							ds_list_add(_list, _arr);
+						}
+					}
+						room_goto(rm_oyun)
+					}
+			break;
+		case 1:
+			if global.energyProduced==1{
+				grid[# 1,i]+=1;
+			}
+		break;
 	break;
 	case quests.agac_dik:
 	

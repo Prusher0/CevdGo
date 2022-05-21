@@ -72,8 +72,13 @@ msgInekTavuk = [
 	["Ineklerin ve Tavuklarin yuzebildigini biliyor muydunuz?", "Creatiny", sImage1],
 ]
 
-global.energyPnt = 0;
 
+msgFireDie = [
+	["Tek Basina Sonduremezsin, Insan Toplamalisin", "Creatiny", sImage1],
+]
+global.energyPnt = 0;
+global.energyProduced=0;
+global.fireSondur =0;
 enum quests{
 	elektrik_uret,
 	yangin_sondur,	
@@ -83,12 +88,8 @@ k=0;
 z=0;
 global.QuestArray= [
 	["Boktan Elektrik Üret",0,["İnek Dışkılarını Toplamalısın","Dışkıları Metan Gazı Makinesine Koy","Başardın"],],
-	[
-		"Yangını Söndür",
-		0,
-		["İnsan Toplamalısın", "Başardın"],
-	],
-	["Ağaç Dik",0,["Çok Fazla Fidana İhtiyacın Var","Fidanları Dikmelisin","Başardın"],],
+	["Yangini Sondur",0,["Yangini Sondurmeyi Dene","Tek Basina Yapamazsin, Insan Toplamalisin", "Basardin"],],
+	["Agac Dik",0,["Çok Fazla Fidana Ihtiyacın Var","Fidanları Dikmelisin","Başardın"],],
 ];
 global.ds_quests = QuestDBScript(global.QuestArray);
 global.ds_quests_number =ds_grid_height(global.ds_quests);

@@ -5,6 +5,9 @@ function scr_oyuncu_kontrol() {
 		if (instance_position(mouse_x, mouse_y, obj_house))
 		{
 			global.houseDialog = 1;
+		}else if (instance_position(mouse_x, mouse_y, obj_fire))
+		{
+			global.fireSondur = 1;
 		}
 		else if (instance_position(mouse_x, mouse_y, sign_skull_mushroom))
 		{
@@ -51,7 +54,6 @@ function scr_oyuncu_kontrol() {
 		}
 		else if(instance_position(mouse_x,mouse_y,obj_crate)){
 			var ui = obj_ui;
-			var alindi = false;
 
 			for (i=1; i<10; i++)
 			{
@@ -59,7 +61,7 @@ function scr_oyuncu_kontrol() {
 				{
 					global.energyPnt+= ui.envanter_numara[i]
 					ui.envanter_numara[i] =0
-					
+					global.energyProduced=1;
 				}
 			}
 		}else if (instance_position(mouse_x, mouse_y, obj_parent_kaynaklar))
