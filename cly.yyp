@@ -96,6 +96,7 @@
     {"id":{"name":"start_button","path":"objects/start_button/start_button.yy",},"order":67,},
     {"id":{"name":"spr_cow_eating","path":"sprites/spr_cow_eating/spr_cow_eating.yy",},"order":60,},
     {"id":{"name":"obj_fire","path":"objects/obj_fire/obj_fire.yy",},"order":42,},
+    {"id":{"name":"Note1","path":"notes/Note1/Note1.yy",},"order":65,},
     {"id":{"name":"ts_toprak","path":"tilesets/ts_toprak/ts_toprak.yy",},"order":2,},
     {"id":{"name":"oManager","path":"objects/oManager/oManager.yy",},"order":62,},
     {"id":{"name":"scr_oyuncu_kontrol","path":"scripts/scr_oyuncu_kontrol/scr_oyuncu_kontrol.yy",},"order":6,},
