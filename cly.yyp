@@ -92,6 +92,7 @@
     {"id":{"name":"SpriteGrass","path":"sprites/SpriteGrass/SpriteGrass.yy",},"order":8,},
     {"id":{"name":"TsGrass","path":"tilesets/TsGrass/TsGrass.yy",},"order":1,},
     {"id":{"name":"spr_btn","path":"sprites/spr_btn/spr_btn.yy",},"order":4,},
+    {"id":{"name":"sign_way_tavuk","path":"objects/sign_way_tavuk/sign_way_tavuk.yy",},"order":11,},
     {"id":{"name":"obj_parent_loot","path":"objects/obj_parent_loot/obj_parent_loot.yy",},"order":22,},
     {"id":{"name":"spr_havuc","path":"sprites/spr_havuc/spr_havuc.yy",},"order":34,},
     {"id":{"name":"spr_craft_pala","path":"sprites/spr_craft_pala/spr_craft_pala.yy",},"order":30,},
@@ -264,9 +265,9 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"rm_oyun","path":"rooms/rm_oyun/rm_oyun.yy",},},
     {"roomId":{"name":"MainMenu","path":"rooms/MainMenu/MainMenu.yy",},},
     {"roomId":{"name":"rm_fabrika","path":"rooms/rm_fabrika/rm_fabrika.yy",},},
-    {"roomId":{"name":"rm_oyun","path":"rooms/rm_oyun/rm_oyun.yy",},},
     {"roomId":{"name":"rm_fire_forest","path":"rooms/rm_fire_forest/rm_fire_forest.yy",},},
     {"roomId":{"name":"PhoneTest","path":"rooms/PhoneTest/PhoneTest.yy",},},
     {"roomId":{"name":"PhoneTest","path":"rooms/PhoneTest/PhoneTest.yy",},},

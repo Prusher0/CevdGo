@@ -17,57 +17,60 @@ global.recyclerDialog = 0;
 global.redportalDialog = 0;
 global.solarDialog = 0;
 global.yellowportalDialog = 0;
+global.tavukinekDialog = 0;
 dialogOn = 0;
 
 msgHouse = [
-	["Evim evim guzel evim !", "Cevdet", sImage1],
+	["Evim evim guzel evim !", "Cevdet", sImage0],
 ]
 
 msgMushroom = [
-	["Mantar xd", "Cevdet", sImage1],
+	["Mantar xd", "Cevdet", sImage0],
 ]
 
 msgBiogas = [
-	["Gübreyi enerjiye çevirmenin harika bir yolu!", "Cevdet", sImage1],
+	["Gubreyi enerjiye cevirmenin harika bir yolu!", "Cevdet", sImage0],
 ]
 
 msgControlpanel = [
-	["Elimdeki teknolojiyle, enerjiyi her seyi gelistirmekte kullanabilirim.", "Cevdet", sImage1],
+	["Elimdeki teknolojiyle, enerjiyi her seyi gelistirmekte kullanabilirim.", "Cevdet", sImage0],
 ]
 
 msgForestentry = [
-	["Ormanin derinliklerinde bir hazine sakli...", "Cevdet", sImage1],
+	["Ormanin derinliklerinde bir hazine sakli...", "Cevdet", sImage0],
 ]
 
 msgGreenportal = [
-	["Edindigim bilgiye gore portalin arkasinda cevreye zarar veren bir fabrika var..", "Cevdet", sImage1],
+	["Edindigim bilgiye gore portalin arkasinda cevreye zararli bir fabrika var..", "Cevdet", sImage0],
 ]
 
 msgObservatory = [
-	["Buzullari gozlemlemenin kolay bir yolu. Gorev tamamladiktan sonra kontrol etmeliyim.", "Cevdet", sImage1],
+	["Buzullari gozlemlemenin kolay yolu. Gorev tamamladiktan sonra kontrol etmeliyim.", "Cevdet", sImage0],
 ]
 
 msgPurpleportal = [
-	["Simdilik bir gorev verilmedi.", "Cevdet", sImage1],
+	["Simdilik bir gorev verilmedi.", "Cevdet", sImage0],
 ]
 
 msgRecycler = [
-	["Topladigim mantarlari ve taslari geri donusturup, enerjiye cevirebilirim.", "Cevdet", sImage1],
+	["Topladigim mantarlari ve taslari geri donusturup, enerjiye cevirebilirim.", "Cevdet", sImage0],
 ]
 
 msgRedportal = [
-	["Tehlikeli ve atesli bir yere cikiyor...", "Cevdet", sImage1],
+	["Tehlikeli ve atesli bir yere cikiyor...", "Cevdet", sImage0],
 ]
 
 msgSolar = [
-	["Buraya gelip gunesten gelen temiz enerjiyi toplayabilirim!", "Cevdet", sImage1],
+	["Buraya gelip gunesten gelen temiz enerjiyi toplayabilirim!", "Cevdet", sImage0],
 ]
 
 msgYellowportal = [
-	["Simdilik bir gorev verilmedi.", "Cevdet", sImage1],
+	["Simdilik bir gorev verilmedi.", "Cevdet", sImage0],
 ]
 
-
+msgInekTavuk = [
+	["Ineklerin ve Tavuklarin yuzebildigini biliyor muydunuz?", "Creatiny", sImage1],
+]
 
 global.energyPnt = 0;
 

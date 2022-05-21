@@ -44,7 +44,12 @@ function scr_oyuncu_kontrol() {
 		}else if (instance_position(mouse_x, mouse_y, sign_way_yellow_portal))
 		{
 			global.yellowportalDialog = 1;
-		}else if(instance_position(mouse_x,mouse_y,obj_crate)){
+		}
+		else if (instance_position(mouse_x, mouse_y, sign_way_tavuk))
+		{
+			global.tavukinekDialog = 1;
+		}
+		else if(instance_position(mouse_x,mouse_y,obj_crate)){
 			var ui = obj_ui;
 			var alindi = false;
 
@@ -103,6 +108,7 @@ function scr_oyuncu_kontrol() {
 			global.redportalDialog = 0;
 			global.solarDialog = 0;
 			global.yellowportalDialog = 0;
+			global.tavukinekDialog = 0;
 			if(sprite_index != anim_kosma)
 			{
 				sprite_index = anim_kosma;
@@ -155,7 +161,6 @@ function scr_oyuncu_kontrol() {
 			}
 		}
 	}
-
 	else
 	{
 		{
