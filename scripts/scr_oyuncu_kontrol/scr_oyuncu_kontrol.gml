@@ -6,42 +6,42 @@ function scr_oyuncu_kontrol() {
 		{
 			global.houseDialog = 1;
 		}
-		if (instance_position(mouse_x, mouse_y, sign_skull_mushroom))
+		else if (instance_position(mouse_x, mouse_y, sign_skull_mushroom))
 		{
 			global.mushroomDialog = 1;
 		}
-		if (instance_position(mouse_x, mouse_y, sign_way_biogas))
+		else if (instance_position(mouse_x, mouse_y, sign_way_biogas))
 		{
 			global.biogasDialog = 1;
 		}
-		if (instance_position(mouse_x, mouse_y, sign_way_control_panel))
+		else if (instance_position(mouse_x, mouse_y, sign_way_control_panel))
 		{
 			global.controlpanelDialog = 1;
 		}
-		if (instance_position(mouse_x, mouse_y, sign_way_forest_entry))
+		else if (instance_position(mouse_x, mouse_y, sign_way_forest_entry))
 		{
 			global.forestDialog = 1;
 		}
-		if (instance_position(mouse_x, mouse_y, sign_way_green_portal))
+		else if (instance_position(mouse_x, mouse_y, sign_way_green_portal))
 		{
 			global.greenportalDialog = 1;
 		}
-		if (instance_position(mouse_x, mouse_y, sign_way_observatory))
+		else if (instance_position(mouse_x, mouse_y, sign_way_observatory))
 		{
 			global.obeservatoryDialog = 1;
-		}if (instance_position(mouse_x, mouse_y, sign_way_purple_portal))
+		}else if (instance_position(mouse_x, mouse_y, sign_way_purple_portal))
 		{
 			global.purpleportalDialog = 1;
-		}if (instance_position(mouse_x, mouse_y, sign_way_recycler))
+		}else if (instance_position(mouse_x, mouse_y, sign_way_recycler))
 		{
 			global.recyclerDialog = 1;
-		}if (instance_position(mouse_x, mouse_y, sign_way_red_portal))
+		}else if (instance_position(mouse_x, mouse_y, sign_way_red_portal))
 		{
 			global.redportalDialog = 1;
-		}if (instance_position(mouse_x, mouse_y, sign_way_solar))
+		}else if (instance_position(mouse_x, mouse_y, sign_way_solar))
 		{
 			global.solarDialog = 1;
-		}if (instance_position(mouse_x, mouse_y, sign_way_yellow_portal))
+		}else if (instance_position(mouse_x, mouse_y, sign_way_yellow_portal))
 		{
 			global.yellowportalDialog = 1;
 		}else if(instance_position(mouse_x,mouse_y,obj_crate)){

@@ -4,12 +4,12 @@ var str ="";
 
 var i=0;
 
-repeat(ds_quests_number){
-	var stage = ds_quests[# 1,i];
+repeat(global.ds_quests_number){
+	var stage = global.ds_quests[# 1,i];
 	draw_sprite(Ic_Uyarilar,k, 150, i*20);
 	if stage != -1 {
-		var array =ds_quests[# 2,i];
-		str += "\n" + string_upper(ds_quests[# 0, i])+": " +array[stage];
+		var array =global.ds_quests[# 2,i];
+		str += "\n" + string_upper(global.ds_quests[# 0, i])+": " +array[stage];
 		str += "\n"
 	}
 	i++;
