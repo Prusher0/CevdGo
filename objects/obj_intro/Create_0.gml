@@ -1,7 +1,7 @@
 /// @description MSG
 
 global.which_img =0;
-
+asd=0;
 msg = [
 	["Inanilmaz sicak bir yaz gunu,", "CREATINY", sImage1],
 	["cekirdek ailesinin kalan tek uyesi Cevdet,", "CREATINY", sImage1],

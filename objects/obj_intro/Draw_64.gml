@@ -39,6 +39,9 @@ else if(global.which_img ==12){
 draw_sprite_stretched(spr_13,3,0,0,display_get_gui_width(),display_get_gui_height()*0.75)
 }
 else if(global.which_img ==13){
+	if asd=0{
+instance_create_layer(x,y,"Instances",music_alien_talk);
+asd=1}
 draw_sprite_stretched(spr_14,3,0,0,display_get_gui_width(),display_get_gui_height()*0.75)
 }
 else if(global.which_img ==14){
