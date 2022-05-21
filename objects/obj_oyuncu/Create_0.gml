@@ -1,5 +1,4 @@
 /// @description Degiskenler
-
 image_speed = 0.3;
 depth = -y;
 x = room_width/2;
