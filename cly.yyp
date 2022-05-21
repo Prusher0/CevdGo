@@ -157,6 +157,7 @@
     {"id":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},"order":0,},
     {"id":{"name":"obj_parent_silah","path":"objects/obj_parent_silah/obj_parent_silah.yy",},"order":23,},
     {"id":{"name":"spr_ates_parilti","path":"sprites/spr_ates_parilti/spr_ates_parilti.yy",},"order":24,},
+    {"id":{"name":"font1","path":"fonts/font1/font1.yy",},"order":6,},
     {"id":{"name":"obj_mantar1","path":"objects/obj_mantar1/obj_mantar1.yy",},"order":51,},
     {"id":{"name":"uclu_portal_sari","path":"sprites/uclu_portal_sari/uclu_portal_sari.yy",},"order":14,},
     {"id":{"name":"spr_craft_hancer","path":"sprites/spr_craft_hancer/spr_craft_hancer.yy",},"order":28,},

@@ -4,6 +4,7 @@ global.inst = instance_create_layer(x+15, y+25, "Mobile", StatsButton);
 global.questButton = instance_create_layer(x+60, y+25, "Mobile", MissionsButton);
 dd=0;
 d=0;
+global.turdToplandi = 0;
 global.houseDialog = 0;
 global.mushroomDialog = 0;
 global.biogasDialog = 0;
@@ -69,3 +70,22 @@ msgYellowportal = [
 
 
 global.energyPnt = 0;
+
+enum quests{
+	elektrik_uret,
+	yangin_sondur,	
+	agac_dik
+}
+k=0;
+z=0;
+global.QuestArray= [
+	["Boktan Elektrik Üret",0,["İnek Dışkılarını Toplamalısın","Dışkıları Metan Gazı Makinesine Koy","Başardın"],],
+	[
+		"Yangını Söndür",
+		0,
+		["İnsan Toplamalısın", "Başardın"],
+	],
+	["Ağaç Dik",0,["Çok Fazla Fidana İhtiyacın Var","Fidanları Dikmelisin","Başardın"],],
+];
+global.ds_quests = QuestDBScript(global.QuestArray);
+global.ds_quests_number =ds_grid_height(global.ds_quests);
