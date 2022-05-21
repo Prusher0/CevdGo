@@ -249,8 +249,8 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"MainMenu","path":"rooms/MainMenu/MainMenu.yy",},},
     {"roomId":{"name":"rm_oyun","path":"rooms/rm_oyun/rm_oyun.yy",},},
+    {"roomId":{"name":"MainMenu","path":"rooms/MainMenu/MainMenu.yy",},},
     {"roomId":{"name":"rm_fire_forest","path":"rooms/rm_fire_forest/rm_fire_forest.yy",},},
     {"roomId":{"name":"rm_fabrika","path":"rooms/rm_fabrika/rm_fabrika.yy",},},
     {"roomId":{"name":"PhoneTest","path":"rooms/PhoneTest/PhoneTest.yy",},},
