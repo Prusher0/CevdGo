@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_crate",
-    "path": "sprites/spr_crate/spr_crate.yy",
+    "name": "spr_sign_way",
+    "path": "sprites/spr_sign_way/spr_sign_way.yy",
   },
   "solid": true,
   "visible": true,
@@ -24,11 +24,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "signs",
+    "path": "folders/Objects/signs.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_crate",
+  "name": "sign_way_biogas",
   "tags": [],
   "resourceType": "GMObject",
 }

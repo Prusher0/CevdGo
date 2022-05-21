@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_crate",
-    "path": "sprites/spr_crate/spr_crate.yy",
+    "name": "spr_sign_skull",
+    "path": "sprites/spr_sign_skull/spr_sign_skull.yy",
   },
   "solid": true,
   "visible": true,
@@ -28,7 +28,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_crate",
+  "name": "obg_sign_skull",
   "tags": [],
   "resourceType": "GMObject",
 }

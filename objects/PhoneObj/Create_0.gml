@@ -5,9 +5,13 @@ global.questButton = instance_create_layer(x+60, y+25, "Mobile", MissionsButton)
 dd=0;
 d=0;
 global.houseDialog = 0;
+global.SignWayRedPortal = 0;
 dialogOn = 0;
 
 msgHouse = [
 	["Bura benim ev", "Cevdet", sImage1],
+]
 
+msgSignWayRedPortal = [
+	["Bura benim ev", "Cevdet", sImage1],
 ]
