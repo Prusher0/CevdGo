@@ -16,6 +16,7 @@ else if (mouse_check_button_pressed(mb_left) or mouse_check_button_pressed(mb_ri
 	if (messageID < ds_list_size(messages) - 1) {
 		messageID++;
 		messageChar = 0;
+		global.which_img=messageID;
 	}
 	// Close textbox
 	else {
