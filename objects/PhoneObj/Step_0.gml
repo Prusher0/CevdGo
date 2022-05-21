@@ -28,6 +28,7 @@ switch(i){
 	}
 	break;
 	case quests.yangin_sondur:
+	switch(grid[# 1,i]){
 		case -1:
 		break;
 		case 0:
@@ -45,7 +46,8 @@ switch(i){
 							ds_list_add(_list, _arr);
 						}
 					}
-						room_goto(rm_oyun)
+						alarm[0] = 2*room_speed;
+						
 					}
 			break;
 		case 1:
@@ -53,6 +55,7 @@ switch(i){
 				grid[# 1,i]+=1;
 			}
 		break;
+	}
 	break;
 	case quests.agac_dik:
 	
