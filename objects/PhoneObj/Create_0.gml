@@ -11,3 +11,4 @@ msgHouse = [
 	["Bura benim ev", "Cevdet", sImage1],
 
 ]
+global.energyPnt = 0;
