@@ -8,3 +8,4 @@ msg = [
 	["Neyse, umarim karsilasacaklarina hazirsindir ?", "CREATINY", sImage1],
 	["Hayir?", "Cevdet", sImage0]
 ]
+global.textBoxDone = 0;

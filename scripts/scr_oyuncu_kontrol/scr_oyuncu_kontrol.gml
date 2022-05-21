@@ -2,7 +2,10 @@ function scr_oyuncu_kontrol() {
 	if (mouse_check_button(mb_left))
 
 	{
-		if (instance_position(mouse_x, mouse_y, obj_parent_kaynaklar))
+		if (instance_position(mouse_x, mouse_y, obj_house))
+		{
+			global.houseDialog = 1;
+		}else if (instance_position(mouse_x, mouse_y, obj_parent_kaynaklar))
 		{
 			
 		
@@ -36,6 +39,7 @@ function scr_oyuncu_kontrol() {
 			
 		else 
 		{
+			global.houseDialog = 0;
 			if(sprite_index != anim_kosma)
 			{
 				sprite_index = anim_kosma;
